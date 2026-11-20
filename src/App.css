@@ -1,14 +1,190 @@
-.start {
-  max-width: 640px;
-  margin: 80px auto;
-  padding: 0 16px;
+.header {
+  background: #2b2b2b;
+  color: #fff;
 }
 
-.start h1 {
-  margin-bottom: 8px;
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.note {
+.header__logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d9a441;
+}
+
+.header__nav {
+  display: flex;
+  gap: 18px;
+}
+
+.header__link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.header__link--active {
+  color: #fff;
+  border-bottom: 2px solid #d9a441;
+}
+
+.header__link--soon {
+  color: #888;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+}
+
+.intro p {
+  margin: 0 0 6px;
+  color: #555;
+}
+
+.intro .intro__date {
+  font-weight: bold;
+  color: #222;
+}
+
+.loading {
+  margin-top: 30px;
+  font-size: 18px;
   color: #777;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.stats__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #d9a441;
+}
+
+.stats__value {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.stats__label {
+  color: #666;
   font-size: 14px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  align-items: start;
+}
+
+.block,
+.next {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.block h2,
+.next h3 {
+  margin-top: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  color: #777;
+  font-weight: normal;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.badge--wait {
+  background: #fff1d6;
+  color: #9a6a00;
+}
+
+.badge--done {
+  background: #dcf3e1;
+  color: #23743a;
+}
+
+.badge--cancel {
+  background: #f6dede;
+  color: #a33;
+}
+
+.next p {
+  margin: 4px 0;
+}
+
+.next__time {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.next__name {
+  font-size: 18px;
+}
+
+.next__phone {
+  color: #555;
+}
+
+.next__comment {
+  color: #777;
+  font-style: italic;
+}
+
+.empty {
+  color: #777;
+}
+
+@media (max-width: 800px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table {
+    font-size: 13px;
+  }
 }
