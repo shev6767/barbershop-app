@@ -8,7 +8,20 @@
 
 ## Стек
 
-React, TypeScript, Vite
+React, TypeScript, Vite, React Router
+
+## Страницы
+
+| Адрес | Страница |
+|-------|----------|
+| / | Главная (журнал записей на сегодня) |
+| /appointments | Список записей |
+| /appointments/:id | Карточка записи |
+| /appointments/new | Новая запись |
+| /appointments/:id/edit | Редактирование записи |
+| /schedule | Расписание мастеров |
+| /stats | Статистика |
+| любой другой адрес | Страница не найдена |
 
 ## Запуск
 

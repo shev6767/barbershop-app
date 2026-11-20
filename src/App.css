@@ -18,6 +18,7 @@
   font-size: 20px;
   font-weight: bold;
   color: #d9a441;
+  text-decoration: none;
 }
 
 .header__nav {
@@ -35,8 +36,8 @@
   border-bottom: 2px solid #d9a441;
 }
 
-.header__link--soon {
-  color: #888;
+.header__link:hover {
+  color: #fff;
 }
 
 .page {
@@ -173,6 +174,56 @@
 
 .empty {
   color: #777;
+}
+
+.page h1 {
+  margin: 0 0 8px;
+}
+
+.page__desc {
+  color: #555;
+  max-width: 700px;
+}
+
+.actions {
+  margin: 18px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #2b2b2b;
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #9a6a00;
+  text-decoration: none;
+}
+
+.simple-list a {
+  color: #222;
+}
+
+.simple-list li {
+  margin-bottom: 6px;
+}
+
+.not-found {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.not-found .page__desc {
+  margin: 0 auto 20px;
 }
 
 @media (max-width: 800px) {
